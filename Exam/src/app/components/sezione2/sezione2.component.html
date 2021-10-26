@@ -1,0 +1,41 @@
+<table style="margin-top: 200px;"class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{employeeList[0].id}}</th>
+        <td> <button (click)="ifClicked()" class="btn-primary">{{employeeList[0].name}}</button></td>
+        <td>{{employeeList[0].description}}</td>
+        
+      </tr>
+      <tr>
+        <th scope="row">{{employeeList[1].id}}</th>
+        <td><button (click)="ifClicked2()" class="btn-primary" >{{employeeList[1].name}}</button></td>
+        <td>{{employeeList[1].description}}</td>
+       
+      </tr>
+      <tr>
+        <th scope="row">{{employeeList[2].id}}</th>
+        <td><button (click)="ifClicked3()"class="btn-primary">{{employeeList[2].name}}</button></td>
+        <td>{{employeeList[2].description}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+ 
+  <div *ngIf="employee1" >
+    <app-sezione2-type [emp]="employeeList[0]"></app-sezione2-type>
+  </div>
+  
+  <div *ngIf="employee2">
+    <app-sezione2-type [emp]="employeeList[1]"></app-sezione2-type>
+  </div>
+
+  <div *ngIf="employee3">
+    <app-sezione2-type [emp]="employeeList[2]"></app-sezione2-type>
+  </div>

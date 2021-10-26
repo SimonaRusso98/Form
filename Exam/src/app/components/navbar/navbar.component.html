@@ -1,0 +1,19 @@
+<div class="containerNav fixed-top">
+    <nav style="border-radius: 32px; position:fixed; margin-top: 5px; background-color:rgb(172, 125, 235); width:100%"  class="row position:fixed-top">
+        <div class="col-3 d-inline-flex">
+          <a class="navbar-brand" href="#">
+            <img src="https://picsum.photos/200/300?grayscale" width="50" height="50" alt="">
+          </a>
+          <h2 class="title">Exam</h2>
+         <!-- <h3 style="color:'deeppink'"class="pointer" (click)="goToHome()">Bakery</h3>-->
+        </div>
+        <div class="col-9 d-inline-flex justify-content-end align-items-center">
+          <a id="links" routerLink='/sezione1' routerLinkActive="active">Sezione1</a>
+          <a id="links" routerLink='/sezione2' routerLinkActive="active">Sezione2</a>
+          <a id="links"(click)="goTo('footer')" >Footer</a>
+          <button id="links" routerLink='/sezione3' routerLinkActive="active">Sezione3</button>
+        </div>
+      </nav>
+    </div>
+    
+     
