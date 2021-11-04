@@ -7,6 +7,7 @@ import { Sezione3Component } from './components/sezione3/sezione3.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { Sezione2TypeComponent } from './components/sezione2/sezione2-type/sezione2-type.component';
+import { ApiListComponent } from './components/api-list/api-list.component';
 
 const routes: Routes = [
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'footer', component: FooterComponent},
   {path: 'sezione3', component: Sezione3Component},
   {path: 'home', component: HomeComponent},
+  {path: 'api-list', component: ApiListComponent},
   {
     path: 'sezione2',
      component: Sezione2Component,
@@ -22,6 +24,7 @@ const routes: Routes = [
        {path:'sezione2-type', component: Sezione2TypeComponent}
      ]
     },
+    
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
@@ -34,5 +37,5 @@ export class AppRoutingModule { }
 export const routingComponents = [
   NavbarComponent, HomeComponent,
   FooterComponent, Sezione1Component, Sezione2Component,
-  Sezione3Component
+  Sezione3Component, ApiListComponent
 ]

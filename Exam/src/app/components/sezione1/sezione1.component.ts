@@ -8,9 +8,11 @@ import { FormControl, FormGroup, FormArray } from '@angular/forms';
 })
 
 export class Sezione1Component implements OnInit {
+
   validations_form!:FormGroup;
   
-  
+  adminvalue:boolean=false;
+  adminvalue1:boolean=false;
 
   constructor(private fb: FormBuilder) { }
   
@@ -29,7 +31,14 @@ export class Sezione1Component implements OnInit {
     console.log(this.validations_form);
     if(this.validations_form.get('username')?.value=== 'admin'){
       console.log('valore esatto');
+      this.adminvalue=true;
+    }
+    if(this.validations_form.get('password')?.value ==='admin'){
+      console.log('valore esatto');
+      this.adminvalue1=true;
     }
   }
+
+ 
 
 }

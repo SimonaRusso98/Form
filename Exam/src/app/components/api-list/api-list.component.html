@@ -1,0 +1,26 @@
+<br>
+<h2 style="margin-top: 100px;">Lista degli impiegati:</h2>
+<button (click)="callService()">Click</button>
+<p *ngIf="name">{{name}}</p>
+
+
+    
+    <table *ngFor="let pl of people" class="table table-bordered border-primary">
+        <thead>
+
+            <tr>
+                <th scope="col-sm-12 col-md-4" style="text-align: center;">userId</th>
+                <th scope="col-sm-12 col-md-4" style="text-align: center;">id</th>
+                <th scope ="col-sm-12 col-md-4" style="text-align: center;">title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" style="text-align: center;">{{pl.userId}}</th>
+                <td class="col-sm-12 col-md-6" style="text-align: center;">{{pl.id}}</td>
+                <td class="col-sm-12 col-md-6"  style="text-align: center;">{{pl.title}}</td>
+               
+            </tr>
+        </tbody>
+        
+    </table>
